@@ -10,6 +10,7 @@ y_train = [1, 2, 3]
 # We know that W should be 1 and b should be 0
 # But let TensorFlow figure it out
 W = tf.Variable(tf.random_normal([1]), name='weight') # these are "trainable" variables that tensorflow changes automatically
+# [1] refers to (1,1) array
 b = tf.Variable(tf.random_normal([1]), name='bias')
 
 # Our hypothesis XW+b
